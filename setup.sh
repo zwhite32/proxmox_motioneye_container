@@ -35,7 +35,7 @@ msg "Installing necessary components..."
 apt-get -y install motion ffmpeg v4l-utils &>/dev/null
 
 # Update
-apt-get update &>/dev/null
+apt-get --allow-releaseinfo-change update &>/dev/null
 
 # Install the dependencies
 msg "Installing dependencies..."
